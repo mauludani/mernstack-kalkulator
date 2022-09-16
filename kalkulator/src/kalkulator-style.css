@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background: linear-gradient();
+}
+
+.kalkulator-grid {
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(7rem, auto) repeat(6, 6rem);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.span-three {
+    grid-column: span 4;
+}
+
+.hasil {
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: .75rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.hasil .prev {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.hasil .current {
+    color: white;
+    font-size: 2.5rem;
+}
